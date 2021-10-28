@@ -1,0 +1,32 @@
+<<script>
+    var x = (prompt("¿Haras una reservación?"));
+    var h = (prompt("¿Cuantas reservaciones?"));
+for (var i=1; i<=h; i++){
+    console.log("Reservacion N°" + i);
+    reservaciones(i);
+} ocupados(i);
+function reservaciones(h) {
+    var nombre = prompt("¿Quien reseva?");
+    var fecha = prompt("¿Que dia reserva?");
+    var estatus = prompt("¿Que estatus tiene?"); 
+        var cliente = {
+            nombre: nombre,
+            fecha: fecha,
+            estatus: estatus
+        }
+        console.log(cliente);
+    }
+    console.log("reservasiones :" + h);
+
+    function ocupados(cliente) {
+        if (cliente.estatus = "ocupado") {
+            console.log("La mesa del" + reservaciones[1] + " esta ocupado");
+        }
+        if (cliente.estatus = "disponible") {
+            console.log("La mesa del" + cliente[2] + " esta disponible");
+        }
+        if (cliente.estatus = "ocupado") {
+            console.log("se confirmaron las reservaciones" + cliente.nombre);
+        }
+    }
+    </script>
